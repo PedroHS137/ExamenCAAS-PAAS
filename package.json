@@ -1,0 +1,29 @@
+{
+  "name": "examencaas-paas",
+  "version": "1.0.0",
+  "description": "IBM tone analysis app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHS137/ExamenCAAS-PAAS.git"
+  },
+  "keywords": [
+    "paas",
+    "caas"
+  ],
+  "author": "PedroHS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHS137/ExamenCAAS-PAAS/issues"
+  },
+  "homepage": "https://github.com/PedroHS137/ExamenCAAS-PAAS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.7.1"
+  }
+}
