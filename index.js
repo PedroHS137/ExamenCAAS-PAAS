@@ -39,14 +39,15 @@ app.post('/', (req, res) => {
         contentType: 'application/json',
     };
     //console.log(req.body.text)
-    res.send(toneAnalyzer.tone(toneParams)
+    toneAnalyzer.tone(toneParams)
         .then(toneAnalysis => {
-            console.log(JSON.stringify(toneAnalysis, null, 2));
+            JSON.stringify(toneAnalysis, null, 2);
+            res.send({ "respuesta": toneAnalysis.result })
         })
         .catch(err => {
             console.log('error:', err);
-        }));
-    //res.send({ "respuesta": total })
+        });
+    
 })
 
 
