@@ -1,5 +1,4 @@
 ---
 applications:
-  - name:backend
-    random-route:true
-    memory:128M
+  - name: examenpjhs
+    memory: 128M
