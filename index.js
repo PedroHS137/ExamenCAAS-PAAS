@@ -29,13 +29,13 @@ app.get('/autor', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    const text = req.body;
+    const texto = req.body.text;
 //     const text = 'Team, I know that times are tough! Product '
 //   + 'sales have been disappointing for the past three '
 //   + 'quarters. We have a competitive product, but we '
 //   + 'need to do a better job of selling it!';
     const toneParams = {
-        toneInput: { 'text': text },
+        toneInput: { 'text': texto },
         contentType: 'application/json',
     };
     //console.log(req.body.text)
